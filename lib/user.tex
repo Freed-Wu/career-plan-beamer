@@ -1,0 +1,125 @@
+\makeatletter
+%-------------------------------------------------------------------------------------------------------
+\title{职业生涯规划}
+\subtitle{}
+\author[吴振宇]{}
+\renewcommand\insertauthor
+{	\newline\makebox[3em][s]{学生}：\makebox[3em][s]{吴振宇}
+	\\\makebox[3em][s]{辅导员}：\makebox[3em][s]{苏欣}
+}
+\institute[南京理工大学]{\includegraphics[width = 0.4\linewidth]{NJUST.ai}}
+\date{\today}
+%-------------------------------------------------------------------------------------------------------
+\usepackage{pgfpages}
+\setbeameroption{show notes on second screen = right}
+\renewcommand\pgfsetupphysicalpagesizes
+{	\pdfpagewidth\pgfphysicalwidth
+	\pdfpageheight\pgfphysicalheight
+}
+%\setbeamercovered{highly dynamic}
+%-------------------------------------------------------------------------------------------------------
+\usecolortheme{whale}
+\usecolortheme{orchid}
+\CenterWallPaper{1}{wood.jpg}
+\setbeamercolor{background canvas}{bg=}
+\setbeamercolor{frametitle}
+{	bg = brown, 
+	fg = white
+}
+\setbeamercolor{title}
+{	fg = white, 
+	bg = brown
+}
+\setbeamercolor{block title}{bg = brown}
+\setbeamercolor{block title example}
+{	use = {normal text, example text}, 
+	fg = example text.fg! 75! normal text.fg, 
+	bg = brown text.bg! 75! black
+}
+\setbeamercolor{fine separation line}{}
+\setbeamercolor{item projected}{fg = black}
+\setbeamercolor{palette sidebar primary}
+{	use = normal text, 
+	fg = normal text.fg
+}
+\setbeamercolor{palette sidebar quaternary}
+{	use = structure, 
+	fg = structure.fg
+}
+\setbeamercolor{palette sidebar secondary}
+{	use = structure, 
+	fg = structure.fg
+}
+\setbeamercolor{palette sidebar tertiary}
+{	use = normal text, 
+	fg = normal text.fg
+}
+\setbeamercolor{section in sidebar}{fg = brown}
+\setbeamercolor{section in sidebar shaded}{fg = grey}
+\setbeamercolor{separation line}{}
+\setbeamercolor{sidebar}{bg = brown}
+\setbeamercolor{sidebar}{parent = palette primary}
+\setbeamercolor{structure}{fg = brown}
+\setbeamercolor{subsection in sidebar}{fg = brown}
+\setbeamercolor{subsection in sidebar shaded}{fg = grey}
+%-------------------------------------------------------------------------------------------------------
+\setbeamerfont{frametitle}{size = \large}
+\setbeamerfont{footnote}{size = \tiny}
+\setbeamerfont{subsection in toc}{size = \footnotesize}
+\setbeamerfont{caption}{size = \scriptsize}
+%-------------------------------------------------------------------------------------------------------
+\useinnertheme[shadow]{rounded}
+%\useinnertheme{circles}
+%\useinnertheme{rectangles}
+%\useinnertheme{inmargin}
+\setbeamertemplate{caption}[numbered]
+%-------------------------------------------------------------------------------------------------------
+%\useoutertheme{infolines}
+%\useoutertheme{split}
+%\useoutertheme[subsection = true]{smoothbars}
+%\useoutertheme{smoothtree} 
+%\useoutertheme[hook]{tree}
+\useoutertheme{shadow}
+\useoutertheme[footline = authorinstitutetitle]{miniframes}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}
+{	\begin{beamercolorbox}
+	[	ht = 2.5ex, 
+		dp = 1.125ex, 
+		leftskip = .3cm, 
+		rightskip = .3cm plus1fil
+	]{author in head/foot}
+		\leavevmode
+		\usebeamerfont{author in head/foot}
+		\usebeamercolor[fg]{author in head/foot}
+		\insertshortauthor
+		\hfill
+		\usebeamerfont{institute in head/foot}
+		\usebeamercolor[fg]{institute in head/foot}
+		\insertshortinstitute
+	\end{beamercolorbox}
+	\begin{beamercolorbox}
+	[	ht = 2.5ex, 
+		dp = 1.125ex, 
+		leftskip = .3cm, 
+		rightskip = .3cm plus1fil
+	]{title in head/foot}
+		\usebeamerfont{title in head/foot}
+		\usebeamercolor[fg]{title in head/foot}
+		\insertshorttitle
+		\hfill
+		\usebeamerfont{frame number}
+		\usebeamercolor[fg]{frame number}
+		第\insertframenumber 页~共\inserttotalframenumber 页
+	\end{beamercolorbox}
+}
+%-------------------------------------------------------------------------------------------------------
+\AtBeginSubsection
+{	\frame<handout:0>
+	{	\frametitle{目录}
+		\tableofcontents[current, currentsubsection]
+	}
+	\addtocounter{framenumber}{-1}
+}
+%-------------------------------------------------------------------------------------------------------
+\makeatother

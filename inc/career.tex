@@ -1,0 +1,60 @@
+\section{职业分析}
+\subsection{头脑风暴}
+\frame
+{	\frametitle{\secname}
+	\begin{block}{\subsecname}
+		\centering
+		\begin{tikzpicture}
+		[	scale = .38, 
+			transform shape
+		]
+			\tikzstyle{every node} = [font = \large]
+			\path
+			[	mindmap, 
+				concept color = black, 
+				text = white
+			]
+			node[concept]{职业选择}[clockwise from = 0]
+			child
+			[	grow = 0, 
+				concept color = black! 25! red
+			]
+			{	node[concept]{社会形势}[clockwise from = 0]
+				child[grow = -60]{node[concept]{高端制造}}
+				child[grow = 0]{node[concept]{航空航天}}
+				child[grow = 60]{node[concept]{智能、控制、新材料……}}
+			}
+			child
+			[	grow = 120, 
+				concept color = black! 25! green
+			]
+			{	node[concept]{个人兴趣}[clockwise from = 0]
+				child[grow = 60]{node[concept]{控制}}
+				child[grow = 120]{node[concept]{智能}}
+				child[grow = 180]{node[concept]{航电}}
+			}
+			child
+			[	grow = 240, 
+				concept color = DeepSkyBlue						
+			]
+			{	node[concept]{行业现状}[clockwise from = 0]
+				child[grow = 180]{node[concept]{能力不足}}
+				child[grow = 240]{node[concept]{经验需要积累}}
+				child[grow = 300]{node[concept]{人才饱和，需要时间熬}}
+			}; 
+		\end{tikzpicture}
+	\end{block}
+}
+\subsection{SWOT分析}
+\frame
+{	\frametitle{\secname}
+	\begin{block}{\subsecname}
+		\centering
+	\end{block}
+}
+\note
+{	优势：目标明确，兴趣所在，专业符合；
+	\\劣势：知识储备，社会因素；
+	\\机会：学校支持，有相关平台；
+	\\威胁：起步较晚，行业不成熟。
+}

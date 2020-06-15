@@ -1,0 +1,127 @@
+\section{未来规划}
+\subsection{人生路径}
+\frame
+{	\frametitle{\secname}
+	\begin{block}{\subsecname}
+	\centering
+		\begin{tikzpicture}
+			\node
+			[	name=就读, 
+				bob, 
+				minimum size=1cm
+			]
+			at(0, 0){就读}; 
+			\node
+			[	ellipse callout, 
+				draw, 
+				xshift=.94cm, 
+				yshift=0cm, 
+				callout absolute pointer={(就读.mouth)}, 
+				font=\tiny
+			]{学习！}; 
+		\end{tikzpicture}
+		\begin{tikzpicture}
+			\node{\ding{225}}; 
+		\end{tikzpicture}
+		\begin{tikzpicture}
+			\node
+			[	name=毕业, 
+				graduate, 
+				minimum size=1cm
+			]
+			at(0,  0){毕业}; 
+			\node
+			[	ellipse callout, 
+				draw, 
+				xshift=.94cm, 
+				yshift=0cm, 
+				callout absolute pointer={(毕业.mouth)}, 
+				font=\tiny
+			]{就业！}; 
+		\end{tikzpicture}
+		\begin{tikzpicture}
+			\node{\ding{224}}; 
+		\end{tikzpicture}
+		\begin{tikzpicture}
+			\node
+			[	name=工作, 
+				dave, 
+				minimum size=1cm
+			]
+			at(0, 0){工作}; 
+			\node
+			[	ellipse callout, 
+				draw, 
+				xshift=.94cm, 
+				yshift=0cm, 
+				callout absolute pointer={(工作.mouth)}, 
+				font=\tiny
+			]{创造！}; 
+		\end{tikzpicture}
+		\begin{tikzpicture}
+			\node{\ding{223}}; 
+		\end{tikzpicture}
+		\begin{tikzpicture}
+			\node
+			[	name=实现人生价值, 
+				businessman, 
+				minimum size=1cm
+			]
+			at(0, 0){实现人生价值}; 
+			\node
+			[	ellipse callout, 
+				draw, 
+				xshift=.94cm, 
+				yshift=0cm, 
+				callout absolute pointer={(实现人生价值.mouth)}, 
+				font=\tiny
+			]{超越！}; 
+		\end{tikzpicture}
+	\end{block}
+}
+\note
+{	完成学历：完成本科的学习后在本校继续读研。学习相关的知识技能。
+	\\进入职场：进入相关的科研院所从事基层科研人员。
+	\\职场提升：通过个人的努力提升能力，在工作过程中承担越来越重要的任务，担任更高级的研发人员。
+	\\担任高层：经过多年的学习和工作，积累了大量经验，期望能担任设计总监。}
+\subsection{目标调整}
+\frame
+{	\frametitle{\secname}
+	\begin{block}{\subsecname}
+		\centering
+		\tikzstyle{every node} = [font = \tiny]
+		\begin{tikzpicture}
+		[	scale = .25, 
+			node distance = 1.5cm
+		]
+			\node(开始)[startstop]{开始}; 
+			\node(制定目标)
+			[	io, 
+				align = center, 
+				below of = 开始
+			]{制定目标}; 
+			\node(目标是否实现？)
+			[	decision, 
+				align = center, 
+				below of = 制定目标
+			]{目标是否实现？}; 
+			\node(目标调整)
+			[	process, 
+				align = center, 
+				right of = 目标是否实现？, 
+				xshift = 1.5cm, 
+				yshift = 1.5cm
+			]{目标调整}; 
+			\node(结束)
+			[	startstop, 
+				align = center, 
+				below of = 目标是否实现？
+			]{结束}; 
+			\draw[arrow](开始)--(制定目标); 
+			\draw[arrow](制定目标)--(目标是否实现？); 
+			\draw[arrow](目标是否实现？)-|node[right]{否}(目标调整); 
+			\draw[arrow](目标调整)--(制定目标); 
+			\draw[arrow](目标是否实现？)--node[right]{是}(结束); 
+		\end{tikzpicture}
+	\end{block}
+}

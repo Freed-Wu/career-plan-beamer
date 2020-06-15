@@ -1,0 +1,108 @@
+\usepackage{makeidx}
+\makeindex
+%-------------------------------------------------------------------------------------------------------
+\usepackage[russian]{babel}
+\let\captionsrussian\empty
+\let\daterussian\empty
+%-------------------------------------------------------------------------------------------------------
+\usepackage{graphicx}
+\graphicspath{{./src/}}
+%-------------------------------------------------------------------------------------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+\tcbuselibrary{theorems}
+\tcbset
+{	colframe = yellow! 50! green, 
+	colback = white, 
+	fonttitle = \bfseries, 
+	left = 0mm, 
+	right = 0mm, 
+	top = 0mm, 
+	bottom = 0mm, 
+	boxsep = 0mm, 
+ 	toptitle = 0.5mm, 
+ 	bottomtitle = 0.5mm, 
+	nobeforeafter, center title
+}
+%-------------------------------------------------------------------------------------------------------
+\usepackage{listings}
+\lstset
+{	language = Octave, 			%thelanguageofthecode
+	basicstyle = \footnotesize, 		%thesizeofthefontsthatareusedforthecode
+	numbers = left, 				%wheretoputtheline-numbers
+	numberstyle = \tiny\color{gray}, 	%thestylethatisusedfortheline-numbers
+	stepnumber = 1, 			%thestepbetweentwoline-numbers.Ifit's1, eachlinewillbenumbered
+	numbersep = 5pt, 			%howfartheline-numbersarefromthecode
+	backgroundcolor = \color{white}, %choosethebackgroundcolor.Youmustadd\usepackage{color}
+	showspaces = false, 			%showspacesaddingparticularunderscores
+	showstringspaces = false, 		%underlinespaceswithinstrings
+	showtabs = false, 			%showtabswithinstringsaddingparticularunderscores
+	frame = single, 				%addsaframearoundthecode
+	rulecolor = \color{black}, 		%ifnotset, theframe-colormaybechangedonline-breakswithinnot-blacktext(e.g.commens(greenhere))
+	tabsize = 2, 				%setsdefaulttabsizeto2spaces
+	captionpos = b, 				%setsthecaption-positiontobottom
+	breaklines = true, 			%setsautomaticlinebreaking
+	breakatwhitespace = false, 	%setsifautomaticbreaksshouldonlyhappenatwhitespace
+	title = \lstname, 				%showthefilenameoffilesincludedwith\lstinputlisting; alsotrycaptioninsteadoftitle
+	keywordstyle = \color{blue}, 	%keywordstyle
+	commentstyle = \color{dkgreen}, %commentstyle
+	stringstyle = \color{mauve}, 	%stringliteralstyle
+	escapeinside = {`}, 			%ifyouwanttoaddLaTeXwithinyourcode
+	morekeywords = {*, ...}		%ifyouwanttoaddmorekeywordstotheset
+}
+%-------------------------------------------------------------------------------------------------------
+\usepackage{printlen}
+\uselengthunit{mm}
+%-------------------------------------------------------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes}
+\usetikzlibrary{chains}
+\usetikzlibrary{mindmap}
+\usetikzlibrary{graphs}
+%-------------------------------------------------------------------------------------------------------
+\usepackage{ifxetex}
+\usepackage{scsnowman}
+\usepackage{tikzpeople}
+\usepackage{tikzducks}
+\usepackage{pifont}
+\usepackage{marvosym}
+%\usepackage{bbding}
+%\usepackage{SIunits}
+\usepackage{stmaryrd}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsopn}
+\usepackage{amstext}
+\usepackage{array}
+\usepackage{bm}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{latexsym}
+\usepackage{epigraph}
+\usepackage{lastpage}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{diagbox}
+\usepackage{multicol}
+\usepackage{indentfirst}
+\usepackage{palatino}
+\usepackage{media9}
+\usepackage{wallpaper}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+\usepackage{colortbl}
+\usepackage{ean13isbn}
+\usepackage{hyperref}
+\usepackage{standalone}
